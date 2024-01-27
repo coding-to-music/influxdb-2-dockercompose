@@ -6,6 +6,10 @@ https://github.com/coding-to-music/influxdb-2-dockercompose
 
 From / By https://github.com/devopsjourney1/influxdb-2-dockercompose
 
+InfluxDB 2.0 - Complete Guide to Getting Started with InfluxDB 2
+
+https://www.youtube.com/watch?v=-gF-Jsk85bQ&ab_channel=DevOpsJourney
+
 ## Environment variables:
 
 ```java
