@@ -1,0 +1,13 @@
+{
+  "name": "influxdb-2-dockercompose",
+  "version": "1.0.0",
+  "description": "# 🚀 Start InlfluxDB version 2 with the Flux language and scrape with Telegraf and view metrics 🚀",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
