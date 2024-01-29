@@ -118,3 +118,22 @@ Run a single telegraf collection, outputting metrics to stdout:
 ```java
 telegraf --config telegraf.conf --test
 ```
+
+## To run Telegraf via Docker
+
+```java
+docker run -d --name telegraf --restart unless-stopped -v /path/to/telegraf.conf:/etc/telegraf/telegraf.conf telegraf
+```
+
+## To run Telegraf via docker-compose.yml
+
+```java
+version: '3'
+services:
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    restart: unless-stopped
+    volumes:
+      - /path/to/telegraf.conf:/etc/telegraf/telegraf.conf
+```
