@@ -99,5 +99,22 @@ telegraf --config http://localhost:8086/api/v2/telegrafs/0c7e48639e4bf000
 # view what is running
 docker ps
 
+```
 
+## Allow Telegraf to scrape the Docker Daemon
+
+https://github.com/influxdata/telegraf/blob/release-1.29/plugins/inputs/docker/README.md
+
+```java
+sudo usermod -aG docker telegraf
+```
+
+## Troubleshoot Telegraf
+
+Validate your Telegraf configuration with --test
+
+Run a single telegraf collection, outputting metrics to stdout:
+
+```java
+telegraf --config telegraf.conf --test
 ```
